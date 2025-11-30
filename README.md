@@ -91,13 +91,24 @@ Steps taken:
   
 Dashboard Results:
 1. Attacks Per Hour
+
+   
 - Shows over 300,000 attacker events captured over the span of a month
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
 2. Top Attacker IPs
+
+
+  
 - Identified different types of IP addresses that have attempted to reach the system, and which are most common
 3. Successful Logins and Commands
+
+
+  
 - shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
 4. Global Attack Map
+
+
+  
 Highlight regions of the world where most of the attacks originate from.
 
 Overall Findings:
