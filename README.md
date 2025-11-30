@@ -91,26 +91,20 @@ Steps taken:
   
 Dashboard Results:
 1. Attacks Per Hour
-
-   
+![Attacker Per Hour - 12H](images/attacks_per_hour_12H.png)
+![Attacks Per Hour - 30D](images/attacks_per_hour_30D.png)
 - Shows over 300,000 attacker events captured over the span of a month
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
 2. Top Attacker IPs
-
-
-  
+![Top Attacker IPs](images/attacker_top_ip.png)
 - Identified different types of IP addresses that have attempted to reach the system, and which are most common
 3. Successful Logins and Commands
-
-
-  
+![Login Attempts](images/login_attempts.png)
 - shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
 4. Global Attack Map
-
-
+![Global Attack Map](images/attacker_world_map.png)
+- Highlight regions of the world where most of the attacks originate from.
   
-Highlight regions of the world where most of the attacks originate from.
-
 Overall Findings:
 -Cloud servers that have ports exposed to the internet are attacked very quickly
 -Many of the attacks were bots that attempted default & weak login credentials
