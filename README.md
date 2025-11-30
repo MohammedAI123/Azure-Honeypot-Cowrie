@@ -1,20 +1,18 @@
 # Azure-Honeypot-Cowrie
-This is a cloud hosted SSH honeypot deployed in Microsoft Azure using cowrie. This is integrated with data collection rules, log analytics and a secuirty monitoring dashboard through Azure Workbooks.
+This is a cloud hosted SSH honeypot deployed in Microsoft Azure using cowrie. This is integrated with data collection rules, log analytics and a security monitoring dashboard through Azure Workbooks.
 This project captures attackers behaviour in real time, highlighting credentials used, brute force, commands used and locations of attackers, all of which are automated and collected and displayed via the monitoring dashboard.
 
 Project Overview:
 This honeypot was created to simulate a vulnerable server, which is exposed to the internet, and the goal was to safely observe the actions of attackers when they attempt to breach the system.
 Once the Virtual Machine was successfully deployed and running, it had received several thousand attempts to break into the system. The attackers had attempted various techniques:
--Login brute force,
--Stuffing credentials,
--execution of malicious commands
--potentially injecting malware
+-Login brute force
+-Stuffing credentials
+-Execution of malicious commands
+-Potentially injecting malware
 
 Cowrie had successfully captured the attackers activity, and through using data collection rules and log analytics, the results were presented into the azure workbook, serving as a dashboard to display and review attacks.
 
-
-
-Technologies:
+Technologies Used:
 Microsoft Azure - 
 Resource Group
 Virtual Machine (Ubuntu)
@@ -25,12 +23,12 @@ Azure Monitor Agent
 Azure Workbooks
 
 Linux-
-checking logs
-inspecting network and processes
+Checking logs
+Inspecting network and processes
 
 Cowrie-
 SSH Honeypot
-Collects login attempts, commands, session details, IP address
+Collects login attempts, commands, session details, IP address and more.
 
 Kusto Query Language (KQL)-
 Query and collect attack data and create visuals in log analytics, such as bar charts, graphs, and world map.
@@ -96,7 +94,7 @@ Dashboard Results:
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
 2. Top Attacker IPs
 ![Top Attacker IPs](images/attackers_top_ip.png)
-- Identified different types of IP addresses that have attempted to reach the system, and which are most common
+- Identified different types of IP addresses that have attempted to reach the system, and which are most common.
 3. Successful Logins and Commands
 ![Login Attempts](images/login_attempts.png)
 - shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
@@ -112,7 +110,7 @@ Overall Findings:
 Future improvements and developments:
 To improve this project further, additional dashboards and detection attempts can be implemented. The workbook could be expanded to add attempts of malware delivery by attackers, command executions, and privilege escalation attempts.
 
-Firewalls, Intrustion detection systems (IDS) and Intrusion Detection Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, attempts can be made to block the attackers.
+Firewalls, Intrusion detection systems (IDS) and Intrusion Detection Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, changes can be made to block the attackers.
 
 This project has collected useful information about the most common IPs of attackers, such as 93.188.83.96 and 31.57.219.92. This information could be explored further, through utilising tools such as VirusTotal and AbuseIBDP, which are known for threat intelligence. This could show if the IPs found are known botnets or used in other attacks.
 
