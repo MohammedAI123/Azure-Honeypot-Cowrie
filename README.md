@@ -5,17 +5,16 @@ This project captures attackers behaviour in real time, highlighting credentials
 Project Overview:
 This honeypot was created to simulate a vulnerable server, which is exposed to the internet, and the goal was to safely observe the actions of attackers when they attempt to breach the system.
 Once the Virtual Machine was successfully deployed and running, it had received several thousand attempts to break into the system. The attackers had attempted various techniques:
-Login brute force,
-Stuffing credentials,
-execution of malicious commands and
-potentially injecting malware
+-Login brute force,
+-Stuffing credentials,
+-execution of malicious commands
+-potentially injecting malware
 
 Cowrie had successfully captured the attackers activity, and through using data collection rules and log analytics, the results were presented into the azure workbook, serving as a dashboard to display and review attacks.
 
-Architecture Diagram:
+
 
 Technologies:
-
 Microsoft Azure - 
 Resource Group
 Virtual Machine (Ubuntu)
@@ -108,7 +107,15 @@ Dashboard Results:
 Overall Findings:
 -Cloud servers that have ports exposed to the internet are attacked very quickly
 -Many of the attacks were bots that attempted default & weak login credentials
--Some attackers atttemped to deliver malware
+-Some attackers atttemped to deliver malware and execute commands
 
 Future improvements and developments:
+To improve this project further, additional dashboards and detection attempts can be implemented. The workbook could be expanded to add attempts of malware delivery by attackers, command executions, and privilege escalation attempts.
 
+Firewalls, Intrustion detection systems (IDS) and Intrusion Detection Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, attempts can be made to block the attackers.
+
+This project has collected useful information about the most common IPs of attackers, such as 93.188.83.96 and 31.57.219.92. This information could be explored further, through utilising tools such as VirusTotal and AbuseIBDP, which are known for threat intelligence. This could show if the IPs found are known botnets or used in other attacks.
+
+Additionally, to simulate a security operations center, alerts could be added when brute force attempts spike, as seen in the Attacks Per Hour (30D) graph, there have been large spikes of brute force attempts on 7th & 13th November. Alerts could also be set up if an attacker executed a successful login attempt or attempted to deliver malware.
+
+A major development to this project would be to implement Infrastructure as Code (IaC) and Continuous Integration/Continuous Deployment (CI/CD). This would transform the project as it automates the deployment of the honeypot environment, similar to a DevSecOps style setup. The project can be repeated and deployed easier and quicker, and any updates and changes can be done automatically too.
