@@ -104,11 +104,13 @@ Dashboard Results:
 - Highlight regions of the world where most of the attacks originate from.
   
 Overall Findings:
--Cloud servers that have ports exposed to the internet are attacked very quickly
--Many of the attacks were bots that attempted default & weak login credentials
--Some attackers atttemped to deliver malware and execute commands
+
+- Cloud servers that have ports exposed to the internet are attacked very quickly
+- Many of the attacks were bots that attempted default & weak login credentials
+- Some attackers atttemped to deliver malware and execute commands
 
 Future improvements and developments:
+
 To improve this project further, additional dashboards and detection attempts can be implemented. The workbook could be expanded to add attempts of malware delivery by attackers, command executions, and privilege escalation attempts.
 
 Firewalls, Intrusion detection systems (IDS) and Intrusion Detection Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, changes can be made to block the attackers.
