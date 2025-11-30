@@ -94,6 +94,7 @@ Dashboard Results:
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
 2. Top Attacker IPs
 ![Top Attacker IPs](images/attackers_top_ip.png)
+![Top Attacker IPs Total](images/top_attacker_ip_total.png)
 - Identified different types of IP addresses that have attempted to reach the system, and which are most common.
 3. Successful Logins and Commands
 ![Login Attempts](images/login_attempts.png)
