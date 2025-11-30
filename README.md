@@ -75,7 +75,7 @@ Steps taken:
 - created custom table
 - the honeypot VM was then set with this rule
 
-  6. Built an Azure Workbook
+6. Built an Azure Workbook
 The Azure Workbook serves as a visualisation of attackers behaviours all in real time. The workbook allows the data to be represented in charts, graphs and maps. Multiple KQL queries can be conducted in one place to create an overview of attacks in various ways.
 
 Steps taken:
