@@ -88,7 +88,7 @@ Steps taken:
   
 Dashboard Results:
 1. Attacks Per Hour
-![Attacker Per Hour - 12H](images/attacks_per_hour_12H.png)
+![Attacks Per Hour - 12H](images/attacks_per_hour_12H.png)
 ![Attacks Per Hour - 30D](images/attacks_per_hour_30D.png)
 - Shows over 300,000 attacker events captured over the span of a month
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
@@ -101,19 +101,19 @@ Dashboard Results:
 - shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
 4. Global Attack Map
 ![Global Attack Map](images/attacker_world_map.png)
-- Highlight regions of the world where most of the attacks originate from.
+- Highlighted regions of the world where most of the attacks originate from.
   
 Overall Findings:
 
 - Cloud servers that have ports exposed to the internet are attacked very quickly
-- Many of the attacks were bots that attempted default & weak login credentials
-- Some attackers atttemped to deliver malware and execute commands
+- Many of the attacks were bots that attempted default & weak login credentials to break in.
+- Some attackers atttempted to deliver malware and execute commands
 
 Future improvements and developments:
 
 To improve this project further, additional dashboards and detection attempts can be implemented. The workbook could be expanded to add attempts of malware delivery by attackers, command executions, and privilege escalation attempts.
 
-Firewalls, Intrusion detection systems (IDS) and Intrusion Detection Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, changes can be made to block the attackers.
+Firewalls, Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) could also be integrated to block attacks from IPs after repeated failed login attempts. Since this project was built to accept all attacks, changes can be made to block the attackers instead.
 
 This project has collected useful information about the most common IPs of attackers, such as 93.188.83.96 and 31.57.219.92. This information could be explored further, through utilising tools such as VirusTotal and AbuseIBDP, which are known for threat intelligence. This could show if the IPs found are known botnets or used in other attacks.
 
