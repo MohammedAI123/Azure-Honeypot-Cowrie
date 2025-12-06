@@ -35,10 +35,10 @@ Collects login attempts, commands, session details, IP address and more.
 Query and collect attack data and create visuals in log analytics, such as bar charts, graphs, and world map.
 
 ## Project Build:
- 1. Created a resource group
+#### 1. Created a resource group
 This is the container that holds the project together, for easy management, clear organisation, monitoring, and deletion when complete.
 
- 2. Deployed a Virtual Machine (Ubuntu Linux)
+#### 2. Deployed a Virtual Machine (Ubuntu Linux)
 The virtual machine serves as the host of the Cowrie honeypot
 The Linux VM was deployed with a public IP and exposed to the internet
 Attackers will quickly scan the public internet for exposed ports, collecting results quickly
@@ -48,7 +48,7 @@ Steps taken:
 - allowed SSH traffic from the internet
 - assigned a public IP, so attackers will reach it
   
- 3. Installation and configuration of cowrie (The honeypot)
+#### 3. Installation and configuration of cowrie (The honeypot)
 Cowrie is the honeypot itself that is designed to collect attacker activity, simulating a real server.
 Cowrie records the attackers behaviour safely for monitoring later
 
@@ -58,7 +58,7 @@ Steps taken:
 - Installed python virtual environment and dependencies - this isolates cowrie from the system and keeps it stable
 - Verified that the logs were being stored
 
- 4. Created the Log Analytics Workspace
+#### 4. Created the Log Analytics Workspace
 This is the central storage piece for logs in azure. This is required as cowrie stores its logs in JSON files. Azure is not able to read these files automatically, so the logs are put into the log analytics workspace. This acts as a cloud database which azure can read and extract, and can be queried using KQL
 
 Steps taken:
@@ -66,7 +66,7 @@ Steps taken:
 - Attached it to the resource group
 - Logs will now be sent here from the DCR
 
- 5. Created the Data Collection Rule (DCR)
+#### 5. Created the Data Collection Rule (DCR)
 The DCR states what logs to collect from cowrie and where to store them, as Azure does not automatically collect JSON logs, the DCR is needed to inform Azure to read the JSON file, direct it to the Log Analytics Workspace and save it in a custom table.
 
 Steps taken:
@@ -76,7 +76,7 @@ Steps taken:
 - created custom table
 - the honeypot VM was then set with this rule
 
- 6. Built an Azure Workbook
+#### 6. Built an Azure Workbook
 The Azure Workbook serves as a visualisation of attackers behaviours all in real time. The workbook allows the data to be represented in charts, graphs and maps. Multiple KQL queries can be conducted in one place to create an overview of attacks in various ways.
 
 Steps taken:
