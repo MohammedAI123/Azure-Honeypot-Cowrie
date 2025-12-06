@@ -96,10 +96,10 @@ Steps taken:
 2. Top Attacker IPs
 ![Top Attacker IPs](images/attackers_top_ip.png)
 ![Top Attacker IPs Total](images/top_attacker_ip_total.png)
-- Identified different types of IP addresses that have attempted to reach the system, and which are most common.
+- Identified different types of IP addresses that have attempted to reach the system, and sorted by the most common
 3. Successful Logins and Commands
 ![Login Attempts](images/LoginAttempts.png)
-- shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
+- shows the combination of weak and default user credentials that attackers try to log in and a timestamp. Additionally, it shows commands that attackers used if the log in was successful
 4. Global Attack Map
 ![Global Attack Map](images/attacker_world_map.png)
 - Highlighted regions of the world where most of the attacks originate from.
