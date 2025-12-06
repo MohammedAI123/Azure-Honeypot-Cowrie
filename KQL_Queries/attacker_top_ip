@@ -1,1 +1,27 @@
+Attacker Top IPs
 
+
+
+
+CowrieDCR_CL
+| extend msg = tostring(message)
+| extend ClientIP = extract(@"\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b", 0, msg)
+| where isnotempty(ClientIP)
+| where not(ClientIP startswith "127.") and not(ClientIP startswith "10.")
+      and not(ClientIP startswith "192.168.") and not(ClientIP matches regex @"^172\.(1[6-9]|2\d|3[0-1])\.")
+| summarize Attempts = count() by ClientIP
+| sort by Attempts desc
+| take 20
+
+
+CowrieDCR_CL
+| extend ClientIP = extract(@"(\d{1,3}\.){3}\d{1,3}", 0, message)
+| where isnotempty(ClientIP)
+// exclude private ranges
+| where ClientIP !startswith "10."
+      and ClientIP !startswith "192.168."
+      and ClientIP !startswith "172."
+      and ClientIP !startswith "127."
+| summarize Attempts = count() by ClientIP
+| sort by Attempts desc
+| take 20
