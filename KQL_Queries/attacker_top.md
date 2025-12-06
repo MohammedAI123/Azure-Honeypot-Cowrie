@@ -20,10 +20,10 @@ CowrieDCR_CL
 - starts with the table name, this is the area where the query is being applied to
 - extend clientIP: creates a new column called ClientIP
 - extract : this function is used to find text, and extract the IP address directly from the logs, since the cowrie logs shows a new connection like this; **New connection: 139.199.80.137:51790 (x.x.x.x)** I had to extract the IP out of the text
- - \d{1,3} - 1-3 digits
- - {3} - this repeats the previous sequence 3 times
- - \d{1,3} - then the final group of digits
- - in total it covers the format of an IPv4 address, e.g. 234.148.12.34, 121.33.456.34
+      \d{1,3} - 1-3 digits
+      {3} - this repeats the previous sequence 3 times
+      \d{1,3} - then the final group of digits
+      in total it covers the format of an IPv4 address, e.g. 234.148.12.34, 121.33.456.34
   
 - where isnotempty(ClientIP) - filtering out logs that dont match an IP, as it isnt needed for this query
 - and ClientIP !startswith "xxx.xxx" - excluding IP ranges that cover an internal IP, as this isnt an attacker
