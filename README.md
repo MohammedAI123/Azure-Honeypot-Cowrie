@@ -2,7 +2,7 @@
 This is a cloud hosted SSH honeypot deployed in Microsoft Azure using cowrie. This is integrated with data collection rules, log analytics and a security monitoring dashboard through Azure Workbooks.
 This project captures attackers behaviour in real time, highlighting credentials used, brute force, commands used and locations of attackers, all of which are automated and collected and displayed via the monitoring dashboard.
 
-Project Overview:
+## Project Overview:
 This honeypot was created to simulate a vulnerable server, which is exposed to the internet, and the goal was to safely observe the actions of attackers when they attempt to breach the system.
 Once the Virtual Machine was successfully deployed and running, it had received several thousand attempts to break into the system. The attackers had attempted various techniques:
 -Login brute force
@@ -12,7 +12,7 @@ Once the Virtual Machine was successfully deployed and running, it had received 
 
 Cowrie had successfully captured the attackers activity, and through using data collection rules and log analytics, the results were presented into the azure workbook, serving as a dashboard to display and review attacks.
 
-Technologies Used:
+## Technologies Used:
 Microsoft Azure - 
 Resource Group
 Virtual Machine (Ubuntu)
@@ -22,18 +22,18 @@ Data Collection Rules
 Azure Monitor Agent
 Azure Workbooks
 
-Linux-
+### Linux-
 Checking logs
 Inspecting network and processes
 
-Cowrie-
+### Cowrie-
 SSH Honeypot
 Collects login attempts, commands, session details, IP address and more.
 
-Kusto Query Language (KQL)-
+### Kusto Query Language (KQL)-
 Query and collect attack data and create visuals in log analytics, such as bar charts, graphs, and world map.
 
-Project Build:
+## Project Build:
  1. Created a resource group
 This is the container that holds the project together, for easy management, clear organisation, monitoring, and deletion when complete.
 
@@ -75,7 +75,7 @@ Steps taken:
 - created custom table
 - the honeypot VM was then set with this rule
 
-6. Built an Azure Workbook
+ 6. Built an Azure Workbook
 The Azure Workbook serves as a visualisation of attackers behaviours all in real time. The workbook allows the data to be represented in charts, graphs and maps. Multiple KQL queries can be conducted in one place to create an overview of attacks in various ways.
 
 Steps taken:
@@ -86,7 +86,7 @@ Steps taken:
       - Successful logins and commands
       - Attacker World Map
   
-Dashboard Results:
+## Dashboard Results:
 1. Attacks Per Hour
 ![Attacks Per Hour - 12H](images/attacks_per_hour_12H.png)
 ![Attacks Per Hour - 30D](images/attacks_per_hour_30D.png)
@@ -103,13 +103,13 @@ Dashboard Results:
 ![Global Attack Map](images/attacker_world_map.png)
 - Highlighted regions of the world where most of the attacks originate from.
   
-Overall Findings:
+## Overall Findings:
 
 - Cloud servers that have ports exposed to the internet are attacked very quickly
 - Many of the attacks were bots that attempted default & weak login credentials to break in.
 - Some attackers atttempted to deliver malware and execute commands
 
-Future improvements and developments:
+## Future improvements and developments:
 
 To improve this project further, additional dashboards and detection attempts can be implemented. The workbook could be expanded to add attempts of malware delivery by attackers, command executions, and privilege escalation attempts.
 
