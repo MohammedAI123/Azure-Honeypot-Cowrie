@@ -13,14 +13,15 @@ Once the Virtual Machine was successfully deployed and running, it had received 
 Cowrie had successfully captured the attackers activity, and through using data collection rules and log analytics, the results were presented into the azure workbook, serving as a dashboard to display and review attacks.
 
 ## Technologies Used:
-Microsoft Azure - 
-Resource Group
-Virtual Machine (Ubuntu)
-Network Security Group (NSG)
-Log Analytics Workspace
-Data Collection Rules
-Azure Monitor Agent
-Azure Workbooks
+
+-Microsoft Azure
+-Resource Group
+-Virtual Machine (Ubuntu)
+-Network Security Group (NSG)
+-Log Analytics Workspace
+-Data Collection Rules
+-Azure Monitor Agent
+-Azure Workbooks
 
 ### Linux-
 Checking logs
