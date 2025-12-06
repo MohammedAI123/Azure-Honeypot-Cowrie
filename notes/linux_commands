@@ -9,7 +9,7 @@ cd ..       go up 1 level
 cd ~        go back to home directory
 pwd         show your current path
 
-## System commands
+System commands
 whoami    shows the curent user
 history   shows commands used previously, can also use arrow keys 
 clear     clear the terminal
