@@ -97,7 +97,7 @@ Dashboard Results:
 ![Top Attacker IPs Total](images/top_attacker_ip_total.png)
 - Identified different types of IP addresses that have attempted to reach the system, and which are most common.
 3. Successful Logins and Commands
-![Login Attempts](images/login_attempts.png)
+![Login Attempts](images/LoginAttempts.png)
 - shows the combination of weak and default user credentials that attackers try to log in, and if they were successful.
 4. Global Attack Map
 ![Global Attack Map](images/attacker_world_map.png)
