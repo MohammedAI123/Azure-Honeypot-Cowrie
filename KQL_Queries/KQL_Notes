@@ -1,0 +1,16 @@
+Helpful KQL Info:
+
+extend:  creates a new colum 
+e.g extend ClientIP
+
+where: Filters rows
+e.g. where isnotempty(ClientIP)
+
+summarise: groups and counts the field
+e.g. summarise attempts
+
+sort: orders the chosen result
+e.g. sort by attempts
+
+take: limits the output by an amount
+e.g. take 40
