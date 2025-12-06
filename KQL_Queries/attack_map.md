@@ -13,9 +13,9 @@ CowrieDCR_CL
 
 ## Query Breakdown 
 - Table at top, this is the table being queried
-- extend ClientIP = extract(@"(\d{1,3}\.){3}\d{1,3}", 0, message)    Also used in attacker top IP query, creates a column for attacker IP and extracts the information from cowrie logs in the specific IP address format
-- where isnotempty(ClientIP)                           makes sure to leave out logs that dont contain an IP address
-- extend Geo = geo_info_from_ip_address(ClientIP)      Azure built in geo function, which can retrieve country, city, latitude and longitude
+- extend AttackIP = extract(@"(\d{1,3}\.){3}\d{1,3}", 0, message)    Also used in attacker top IP query, creates a column for attacker IP and extracts the information from cowrie logs in the specific IP address format
+- where isnotempty(AttackIP)                           makes sure to leave out logs that dont contain an IP address
+- extend Geo = geo_info_from_ip_address(AttackIP)      Azure built in geo function, which can retrieve country, city, latitude and longitude, and others.
 - extend Country = tostring(Geo.country)               takes out just the country input and puts it into a column
 - summarize Attempts = count() by Country              collect the total count and groups it by country
 - sort by Attempts desc                                sorts by the most common countries first
