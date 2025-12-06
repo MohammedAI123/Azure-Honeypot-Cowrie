@@ -30,6 +30,6 @@ CowrieDCR_CL
 - summarize attempts = count() by AttackerIP -       groups the results and makes a count of it
 - sort by Attempts desc -       sorts them in descending order, biggest to smallest
 - take 20 -       takes the 20 most common IPs, can be change to any number 
-- once complete and results are shown, we can change the visualisation type and time range. As an example, ive chosen a bar chart that show sresults over the last 30 days
+- once complete and results are shown, we can change the visualisation type and time range. As an example, I have chosen a bar chart that shows results over the last 30 days
 
 
