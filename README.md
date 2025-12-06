@@ -88,19 +88,19 @@ Steps taken:
       - Attacker World Map
   
 ## Dashboard Results:
-1. Attacks Per Hour
+### 1. Attacks Per Hour
 ![Attacks Per Hour - 12H](images/attacks_per_hour_12H.png)
 ![Attacks Per Hour - 30D](images/attacks_per_hour_30D.png)
 - Shows over 300,000 attacker events captured over the span of a month
 - Can see attack count over a selected time period, such as last 12 hours, last 24 Hours, last 3 days. ect
-2. Top Attacker IPs
+### 2. Top Attacker IPs
 ![Top Attacker IPs](images/attackers_top_ip.png)
 ![Top Attacker IPs Total](images/top_attacker_ip_total.png)
 - Identified different types of IP addresses that have attempted to reach the system, and sorted by the most common
-3. Successful Logins and Commands
+### 3. Successful Logins and Commands
 ![Login Attempts](images/LoginAttempts.png)
 - shows the combination of weak and default user credentials that attackers try to log in and a timestamp. Additionally, it shows commands that attackers used if the log in was successful
-4. Global Attack Map
+### 4. Global Attack Map
 ![Global Attack Map](images/attacker_world_map.png)
 - Highlighted regions of the world where most of the attacks originate from.
   
