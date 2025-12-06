@@ -1,8 +1,8 @@
 # Helpful Linux Commands:
 
-**Here are some commands that are useful to get more confortable with linux, most of these I have also used or my honeypot** 
+Here are some commands that are useful to get more confortable with linux, most of these I have also used or my honeypot
 
-ls -          list all files in the current directory
+ls         list all files in the current directory.
 ls - la       list all files in more detail
 cd (folder name)    Change Directory into the folder name
 cd ..       go up 1 level
