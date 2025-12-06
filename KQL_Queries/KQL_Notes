@@ -1,10 +1,10 @@
 Helpful KQL Info:
 
 extend:  creates a new colum 
-e.g extend ClientIP
+e.g extend AttackIP
 
 where: Filters rows
-e.g. where isnotempty(ClientIP)
+e.g. where isnotempty(AttackIP)
 
 summarise: groups and counts the field
 e.g. summarise attempts
