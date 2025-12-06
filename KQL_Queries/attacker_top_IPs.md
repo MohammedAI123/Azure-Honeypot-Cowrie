@@ -14,7 +14,7 @@ CowrieDCR_CL
 | take 20
 ```
 
-**This KQL query obtains the attacker IPs and collects a count of how many times each IP address appears**
+**This KQL query obtains the attacker IPs and collects a count of how many times each IP address appears, starting with the most common first**
 
 ## Query Breakdown
 - Table name at top, this is the area being queried
