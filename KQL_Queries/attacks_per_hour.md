@@ -6,6 +6,7 @@ CowrieDCR_CL
 | summarize Attacks = count() by bin(TimeGenerated, 1h)
 | sort by TimeGenerated desc
 ```
+**this query collects the amount of attacks collected per hour, to visualise how often the system is targeted over a chosen timeframe**
 
 ## Query Breakdown
 - Table name at top, this is the table being queried
