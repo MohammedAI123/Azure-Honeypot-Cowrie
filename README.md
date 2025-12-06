@@ -14,14 +14,14 @@ Cowrie had successfully captured the attackers activity, and through using data 
 
 ## Technologies Used:
 
--Microsoft Azure
--Resource Group
--Virtual Machine (Ubuntu)
--Network Security Group (NSG)
--Log Analytics Workspace
--Data Collection Rules
--Azure Monitor Agent
--Azure Workbooks
+- Microsoft Azure
+- Resource Group
+- Virtual Machine (Ubuntu)
+- Network Security Group (NSG)
+- Log Analytics Workspace
+- Data Collection Rules
+- Azure Monitor Agent
+- Azure Workbooks
 
 ### Linux-
 Checking logs
