@@ -29,7 +29,7 @@ CowrieDCR_CL
   7.  message - search for info inside this column
   
 - where isnotempty(AttackerIP) -       filtering out logs that dont match an IP, as it isnt needed for this query
-- and AttackerIP !startswith "xxx.xxx" -       excluding IP ranges that cover an internal IP, as this isnt an attacker IP. '!' means not,but I can also use "where not ("xxx.xxx.xxx.xxx") this should work the same to exclude iP ranges that are private
+- and AttackerIP !startswith "xxx.xxx" -       excluding IP ranges that cover an internal IP, as this isnt an attacker IP. '!' means not,but I can also use "where not ("xxx.xxx.xxx.xxx")" this should work the same to exclude iP ranges that are private
 - summarize attempts = count() by AttackerIP -       groups the results and makes a count of it
 - sort by Attempts desc -       sorts them in descending order, biggest to smallest
 - take 20 -       takes the 20 most common IPs, can be changed to any number 
