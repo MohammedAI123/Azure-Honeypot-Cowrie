@@ -5,10 +5,10 @@ This project captures attackers behaviour in real time, highlighting credentials
 ## Project Overview:
 This honeypot was created to simulate a vulnerable server, which is exposed to the internet, and the goal was to safely observe the actions of attackers when they attempt to breach the system.
 Once the Virtual Machine was successfully deployed and running, it had received several thousand attempts to break into the system. The attackers had attempted various techniques:
--Login brute force
--Stuffing credentials
--Execution of malicious commands
--Potentially injecting malware
+- Login brute force
+- Stuffing credentials
+- Execution of malicious commands
+- Potentially injecting malware
 
 Cowrie had successfully captured the attackers activity, and through using data collection rules and log analytics, the results were presented into the azure workbook, serving as a dashboard to display and review attacks.
 
